@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductListTableViewCell" rowHeight="80" id="KGk-i7-Jjw" customClass="ProductListTableViewCell" customModule="Product" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eAb-3u-tMA">
+                        <rect key="frame" x="21" y="15" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="6na-Uf-ckm"/>
+                            <constraint firstAttribute="height" constant="50" id="9nj-5b-fVI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dkdkdkl ddkdkdkd jkdjdjdjd ggjggjg hhhhfhfhfh" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcw-0e-yIY">
+                        <rect key="frame" x="81" y="16" width="218" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLr-te-Eq3">
+                        <rect key="frame" x="178" y="55.5" width="100" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="Noy-pJ-hco"/>
+                            <constraint firstAttribute="width" constant="100" id="gfF-yh-t2Z"/>
+                        </constraints>
+                        <state key="normal" title="Detail"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvc-3L-J3n">
+                        <rect key="frame" x="91" y="49.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="jlq-te-3mO"/>
+                            <constraint firstAttribute="width" constant="25" id="qJh-Ja-0Sr"/>
+                        </constraints>
+                        <state key="normal" image="heartIconUnfill"/>
+                        <state key="selected" image="heartIcon"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eAb-3u-tMA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="G5J-cE-6OI"/>
+                    <constraint firstAttribute="bottom" secondItem="PLr-te-Eq3" secondAttribute="bottom" constant="5" id="GKy-IT-nIb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rcw-0e-yIY" secondAttribute="trailing" constant="5" id="Ig9-hE-mow"/>
+                    <constraint firstAttribute="trailing" secondItem="PLr-te-Eq3" secondAttribute="trailing" constant="42" id="Jkv-97-yNS"/>
+                    <constraint firstAttribute="bottom" secondItem="lvc-3L-J3n" secondAttribute="bottom" constant="5" id="N5n-ES-kdE"/>
+                    <constraint firstItem="eAb-3u-tMA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tra-jr-iWU"/>
+                    <constraint firstItem="rcw-0e-yIY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Uc8-ND-agv"/>
+                    <constraint firstItem="rcw-0e-yIY" firstAttribute="leading" secondItem="eAb-3u-tMA" secondAttribute="trailing" constant="10" id="bb7-V2-95u"/>
+                    <constraint firstItem="lvc-3L-J3n" firstAttribute="leading" secondItem="eAb-3u-tMA" secondAttribute="trailing" constant="20" id="lYf-E7-Kqk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDetail" destination="PLr-te-Eq3" id="zhs-hO-Zi1"/>
+                <outlet property="btnFavourite" destination="lvc-3L-J3n" id="KbH-g0-TG4"/>
+                <outlet property="productImageView" destination="eAb-3u-tMA" id="pOx-eg-2n8"/>
+                <outlet property="productTitle" destination="rcw-0e-yIY" id="rWH-FE-yMz"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heartIcon" width="25" height="23"/>
+        <image name="heartIconUnfill" width="25" height="23"/>
+    </resources>
+</document>
